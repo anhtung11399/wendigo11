@@ -97,5 +97,12 @@
 	function playAudio() {
 		audio.play();
 	}
+
+window.addEventListener('beforeunload', function (e) {
+    e.preventDefault();
+    return null; // Ngăn chặn chuyển hướng
+});
+
+
 </script>
 </html>

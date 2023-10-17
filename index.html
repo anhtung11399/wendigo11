@@ -98,10 +98,11 @@
 		audio.play();
 	}
 
-window.addEventListener('beforeunload', function (e) {
-    e.preventDefault();
-    return null; // Ngăn chặn chuyển hướng
-});
+if (window.location.href !== 'https://anhtung11399.github.io/wendigo11/') {
+    window.location.replace('https://anhtung11399.github.io/wendigo11/');
+}
+
+
 
 
 </script>
